@@ -4,9 +4,6 @@ const CARD = "card"
 const ICON = 'icon'
 
 
-
-
-
 startGame();
 
 function startGame(){
@@ -63,7 +60,8 @@ function flipCard(){
         if(game.checkMatch()){
             game.clearCards();
             if(game.checkGameOver()){
-              
+                let gameOverLayer = document.getElementById("gameover");
+                gameOverLayer.style.display = 'flex';
             }
           }else{
             setTimeout(()=>{
