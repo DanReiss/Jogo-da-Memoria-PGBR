@@ -46,6 +46,12 @@ body{
 .card_back{
     background-color: #05c3ff;
     font-size: 50px;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.card_back:hover{
+    transform: scale(1.05);
 }
 
 #gameover{
@@ -60,6 +66,15 @@ body{
     align-items: center;
     flex-direction: column;
     top: 0;
+}
+
+#gameover button{
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+#gameover button:hover{
+    transform: scale(1.05);
 }
 
 #restart{
